@@ -1,0 +1,52 @@
+@if (product()) 
+{
+    <div class="product-details">
+       
+        <div class="product-gallery">
+          <div class="image-container">
+            <img [src]="product()?.image" alt="{{ product()?.name }}" class="product-image" />
+          </div>
+          <div class="product-info">
+            <h2 class="product-name">{{ product()?.name }}</h2>
+            <p class="product-price">{{ product()?.price }}</p>
+            <p class="product-description">{{ product()?.description || 'No description available.' }}</p>
+            <div class="product-description">
+                <strong>Type: </strong>{{ product()?.type }}
+              </div>
+              <div class="product-description">
+                <strong>Top Notes: </strong>{{ product()?.topNotes }}
+              </div>
+              <div class="product-description">
+                <strong>Heart Notes: </strong>{{ product()?.heartNotes }}
+              </div>
+              <div class="product-description">
+                <strong>Base Notes: </strong>{{ product()?.baseNotes }}
+              </div>
+              <div class="product-description">
+                <strong>Scent Profile: </strong>{{ product()?.scentProfile }}
+              </div>
+              <div class="product-description">
+                <strong>Longevity & Projection: </strong>{{ product()?.longevityProjection }}
+              </div>
+              <div class="product-description">
+                <strong>Best for: </strong>{{ product()?.bestfor }}
+              </div>
+              <div class="product-description">
+                <strong>Bottle Design: </strong>{{ product()?.bottleDesign }}
+              </div>
+              <button class="add-to-cart-btn" (click)="addToCart()">
+                 Add to Cart
+              </button>
+          </div>
+        </div>
+      </div>
+      
+}
+
+  <!-- إذا المنتج غير موجود نعرض رسالة -->
+@if (!product()) 
+{
+    <div class="product-not-found">
+        <p class="not-found-message">Product not found!</p>
+    </div>
+}

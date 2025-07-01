@@ -1,0 +1,154 @@
+<div class="fragrance-page">
+  <h2 class="title">Collections</h2>
+
+  <!-- عطور -->
+  @if (perfumes().length > 0) {
+    <h3 class="category-title">Perfumes</h3>
+    <div class="product-grid">
+      @for (product of perfumes(); track product.id) {
+        <div class="product-card">
+          <img [src]="product.image" alt="{{ product.name }}" />
+          <h3>{{ product.name }}</h3>
+          <p class="price">{{ product.price }}</p>
+          <button [routerLink]="['/product', product.id]">View Details</button>
+        </div>
+      }
+    </div>
+  }
+
+  <!-- زيوت -->
+  @if (oils().length > 0) {
+    <h3 class="category-title">Oil</h3>
+    <div class="product-grid">
+      @for (product of oils(); track product.id) {
+        <div class="product-card">
+          <img [src]="product.image" alt="{{ product.name }}" />
+          <h3>{{ product.name }}</h3>
+          <p class="price">{{ product.price }}</p>
+          <button [routerLink]="['/product', product.id]">View Details</button>
+        </div>
+      }
+    </div>
+  }
+
+   <!-- Body Mist -->
+  @if (bodymists().length > 0) {
+    <h3 class="category-title">Body Mist</h3>
+    <div class="product-grid">
+      @for (product of bodymists(); track product.id) {
+        <div class="product-card">
+          <img [src]="product.image" alt="{{ product.name }}" />
+          <h3>{{ product.name }}</h3>
+          <p class="price">{{ product.price }}</p>
+          <button [routerLink]="['/product', product.id]">View Details</button>
+        </div>
+      }
+    </div>
+  }
+
+  <!-- aromaDiffusers -->
+  @if (aromaDiffusers().length > 0) {
+    <h3 class="category-title">Aroma Diffusers</h3>
+    <div class="product-grid">
+      @for (product of aromaDiffusers(); track product.id) {
+        <div class="product-card">
+          <img [src]="product.image" alt="{{ product.name }}" />
+          <h3>{{ product.name }}</h3>
+          <p class="price">{{ product.price }}</p>
+          <button [routerLink]="['/product', product.id]">View Details</button>
+        </div>
+      }
+    </div>
+  }
+
+   <!-- vaseline -->
+  @if (vaseline().length > 0) {
+    <h3 class="category-title">Vaseline</h3>
+    <div class="product-grid">
+      @for (product of vaseline(); track product.id) {
+        <div class="product-card">
+          <img [src]="product.image" alt="{{ product.name }}" />
+          <h3>{{ product.name }}</h3>
+          <p class="price">{{ product.price }}</p>
+          <button [routerLink]="['/product', product.id]">View Details</button>
+        </div>
+      }
+    </div>
+  }
+  
+  <!-- بخور -->
+  @if (incense().length > 0) {
+    <h3 class="category-title">Incense</h3>
+    <div class="product-grid">
+      @for (product of incense(); track product.id) {
+        <div class="product-card">
+          <img [src]="product.image" alt="{{ product.name }}" />
+          <h3>{{ product.name }}</h3>
+          <p class="price">{{ product.price }}</p>
+          <button [routerLink]="['/product', product.id]">View Details</button>
+        </div>
+      }
+    </div>
+  }
+
+  <!-- candle -->
+  @if (candle().length > 0) {
+    <h3 class="category-title">Candle</h3>
+    <div class="product-grid">
+      @for (product of candle(); track product.id) {
+        <div class="product-card">
+          <img [src]="product.image" alt="{{ product.name }}" />
+          <h3>{{ product.name }}</h3>
+          <p class="price">{{ product.price }}</p>
+          <button [routerLink]="['/product', product.id]">View Details</button>
+        </div>
+      }
+    </div>
+  }
+
+ <!-- deoorant -->
+  @if (deodorant().length > 0) {
+    <h3 class="category-title">Deodorant</h3>
+    <div class="product-grid">
+      @for (product of deodorant(); track product.id) {
+        <div class="product-card">
+          <img [src]="product.image" alt="{{ product.name }}" />
+          <h3>{{ product.name }}</h3>
+          <p class="price">{{ product.price }}</p>
+          <button [routerLink]="['/product', product.id]">View Details</button>
+        </div>
+      }
+    </div>
+  }
+
+   <!-- gloss -->
+  @if (gloss().length > 0) {
+    <h3 class="category-title">Gloss</h3>
+    <div class="product-grid">
+      @for (product of gloss(); track product.id) {
+        <div class="product-card">
+          <img [src]="product.image" alt="{{ product.name }}" />
+          <h3>{{ product.name }}</h3>
+          <p class="price">{{ product.price }}</p>
+          <button [routerLink]="['/product', product.id]">View Details</button>
+        </div>
+      }
+    </div>
+  }
+
+  <!-- soap -->
+  @if (soap().length > 0) {
+    <h3 class="category-title">Soap</h3>
+    <div class="product-grid">
+      @for (product of soap(); track product.id) {
+        <div class="product-card">
+          <img [src]="product.image" alt="{{ product.name }}" />
+          <h3>{{ product.name }}</h3>
+          <p class="price">{{ product.price }}</p>
+          <button [routerLink]="['/product', product.id]">View Details</button>
+        </div>
+      }
+    </div>
+  }
+
+</div>

@@ -1,0 +1,14 @@
+<header class="navbar">
+  <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+  <a routerLink="/fragrances" routerLinkActive="active">Products</a>
+  
+  <a routerLink="/cart" routerLinkActive="active" class="cart-icon">
+      🛒
+  <span class="count">
+  @if (cart.items().length > 0) 
+  {
+    {{ cart.items().length }}
+  }
+  </span>
+  </a>
+</header>

@@ -1,0 +1,130 @@
+.home {
+  text-align: center;
+  padding: 80px 20px;
+  background: #f3f3f3;
+}
+  
+.home h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+  
+.home p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Features */
+.features {
+  padding: 80px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #000000;
+}
+
+.features-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.features-list li {
+  background: #fffbfb;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.features-list li:hover {
+  transform: translateY(-5px);
+}
+
+.features-list h3 {
+  color: #4c0a0a;
+  margin-bottom: 1rem;
+}
+
+.features-list p {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* Gallery */
+.gallery {
+  text-align: center;
+  padding: 4rem 1rem;
+  background: linear-gradient(to bottom, #faf7f5, #f3f3f3);
+}
+
+.gallery h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #3e2a56;
+  font-family: 'Playfair Display', serif;
+}
+
+.slider {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.slider-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  transition: opacity 1s ease-in-out;
+}
+
+/* Testimonials */
+.testimonials {
+  background: #fff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 2rem;
+  color: #4c0a0a;
+  margin-bottom: 2.5rem;
+}
+
+.testimonial-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.testimonial {
+  background: #fefefe;
+  padding: 1.5rem 2rem;
+  border-radius: 14px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+  font-style: italic;
+}
+
+.testimonial p {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+.testimonial h4 {
+  font-size: 0.9rem;
+  color: #888;
+}
